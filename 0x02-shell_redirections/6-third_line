@@ -1,7 +1,2 @@
 #!/bin/bash
-
-if [ -f "iacta" ]; then
-    awk 'NR==3' iacta
-else
-    echo "File 'iacta' not found in the current directory."
-fi
+tail -n +3 iacta | head -n 1
